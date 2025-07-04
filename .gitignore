@@ -1,42 +1,51 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+## Ignore build results
+bin/
+obj/
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
+## Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-# IDEs and editors
+## Ignore Rider IDE files
 .idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+## Ignore NuGet packages
+*.nupkg
+*.snupkg
+# The packages folder can be ignored if you're using PackageReference
+packages/
+# Uncomment if you have a NuGet packages cache
+# ~/.nuget/
 
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+## Ignore build logs
+*.log
 
-# System files
-.DS_Store
-Thumbs.db
+## Ignore temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+## Ignore local configuration files
+appsettings.*.json
+
+## Ignore Test Results
+TestResults/
+
+## Ignore coverage reports
+coverage/
+*.coverage
+*.coveragexml
+*.codecoverage
+
+## Ignore publish output
+publish/
+
+## Ignore global.json lock
+global.json.lock
